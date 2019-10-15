@@ -6,9 +6,13 @@ body {
 
 #contentArea {
     width: 872px;
-    height: 872px;
+    height: 1116px;
     background-color: #EEEEEE;
     padding: 30px 50px 30px 50px;
+}
+
+#others {
+	margin-top: 550px;
 }
 
 name {
@@ -70,6 +74,11 @@ keyPoints {
 
 .educationHistory {
     margin-bottom: 18px;
+}
+
+.projectName {
+	font-weight: bold;
+	font-size: 18px;
 }
 
 #contacts li, #skills li, #languages li {
