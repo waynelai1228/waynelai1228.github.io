@@ -8,11 +8,11 @@ body {
     width: 872px;
     height: 1116px;
     background-color: #EEEEEE;
-    padding: 30px 50px 30px 50px;
+    padding: 30px 50px 30px 40px;
 }
 
 #others {
-	margin-top: 550px;
+	margin-top: 10px;
 }
 
 name {
@@ -37,8 +37,9 @@ subtext {
     height: 70px;
 }
 .halfWidthSection {
+	margin-left:5px;
     display: block;
-    width: 436px;
+    width: 431px;
     float: left;
 }
 
