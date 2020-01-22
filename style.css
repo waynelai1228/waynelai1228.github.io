@@ -4,6 +4,15 @@ body {
     font-family: "Arial";
 }
 
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: blue;
+}
+
 #contentArea {
     width: 872px;
     height: 1116px;
