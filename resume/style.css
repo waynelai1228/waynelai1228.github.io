@@ -1,0 +1,98 @@
+body {
+    //margin: 0px;
+    //border: 0px;
+    font-family: "Arial";
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: blue;
+}
+
+#contentArea {
+    width: 872px;
+    height: 1116px;
+    background-color: #EEEEEE;
+    padding: 30px 50px 30px 40px;
+}
+
+#others {
+	margin-top: 10px;
+}
+
+name {
+    display: block;
+    width: 872px;
+
+    font-weight: bold;
+    font-size: 30px;
+}
+
+subtext {
+    margin-bottom: 20px;
+    display: block;
+    width: 872px;
+
+    font-size: 18px;
+}
+
+.fullWidthSection {
+    display: block;
+    width: 872px;
+    height: 70px;
+}
+.halfWidthSection {
+	margin-left:5px;
+    display: block;
+    width: 431px;
+    float: left;
+}
+
+sectionTitle {
+    margin-top: 10px;
+    display: block;
+
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.companyName {
+    font-size: 18px;
+}
+.roleName {
+    font-weight: bold;
+    font-size: 18px;
+}
+.timeSpan {
+    font-size: 14px;
+}
+
+keyPoints {
+    padding-right: 10px;
+    font-size: 16px;
+}
+
+.institutionName {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.educationHistory {
+    margin-bottom: 18px;
+}
+
+.projectName {
+	font-weight: bold;
+	font-size: 18px;
+}
+
+#contacts li, #skills li, #languages li {
+    margin-left: 15px;
+    margin-right: 4px;
+    float:left;
+}

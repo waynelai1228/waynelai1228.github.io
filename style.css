@@ -1,98 +1,96 @@
+html{
+	margin: 0px;
+	padding: 0px;
+}
+
 body {
-    //margin: 0px;
-    //border: 0px;
-    font-family: "Arial";
+	height: 100%;
+	width:100%;
+	
+	margin: 0px;
+	
+	background-image: url("./image/mountain_and_trees_by_Dan.jpg");
+	background-size: cover;
+	
+	font-family: Mylodon-Light;
+	color: white;
+}
+
+@font-face {
+	font-family: Mylodon-Light;
+	src: url("./font/Mylodon-Light.otf");
 }
 
 a {
 	text-decoration: none;
-	color: black;
+	color: white;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover{
+	text-shadow: 2px 2px 4px white;
 }
 
-a:hover {
-	color: blue;
+#content_wrapper {
+	position: fixed;
+	
+	height: 90%;
+	width: 90%;
+	
+	top: 5%;
+	left: 5%;
+	
+	border-radius: 10px;
+	
+	font-family: Mylodon-Light;
+	background-color: rgba(0, 0, 0, 0.7);
 }
 
-#contentArea {
-    width: 872px;
-    height: 1116px;
-    background-color: #EEEEEE;
-    padding: 30px 50px 30px 40px;
+h1 {
+	margin-bottom: 5px;
+	border-bottom: 2px solid #ffffff;
+	margin-left: 20px;
+	
+	font-size: 40px;
 }
 
-#others {
+nav {
+	font-family: Mylodon-Light;
+	font-size: 30px;
+	
+	height: 80%;
+	width: 250px;
+	
+	margin-top: 20px;
+	
+	display: block;
+	overflow: hidden;
+	float: left;
+	
+	border-right: 2px solid #ffffff;
+	margin-left: 20px;
+}
+
+#text_area {
+	margin-left: 300px;
+	margin-right: 20px;
+	overflow: hidden;
+	
+	font-size: 20px;
+	font-family: courier;
+}
+
+pre {
 	margin-top: 10px;
 }
 
-name {
-    display: block;
-    width: 872px;
-
-    font-weight: bold;
-    font-size: 30px;
+#background_credit {
+	position: fixed;
+	bottom: 0;
+	right: 0;
 }
 
-subtext {
-    margin-bottom: 20px;
-    display: block;
-    width: 872px;
-
-    font-size: 18px;
-}
-
-.fullWidthSection {
-    display: block;
-    width: 872px;
-    height: 70px;
-}
-.halfWidthSection {
-	margin-left:5px;
-    display: block;
-    width: 431px;
-    float: left;
-}
-
-sectionTitle {
-    margin-top: 10px;
-    display: block;
-
-    font-weight: bold;
-    font-size: 20px;
-}
-
-.companyName {
-    font-size: 18px;
-}
-.roleName {
-    font-weight: bold;
-    font-size: 18px;
-}
-.timeSpan {
-    font-size: 14px;
-}
-
-keyPoints {
-    padding-right: 10px;
-    font-size: 16px;
-}
-
-.institutionName {
-    margin-bottom: 5px;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.educationHistory {
-    margin-bottom: 18px;
-}
-
-.projectName {
-	font-weight: bold;
-	font-size: 18px;
-}
-
-#contacts li, #skills li, #languages li {
-    margin-left: 15px;
-    margin-right: 4px;
-    float:left;
+.link_sep {
+	height: 20px;
 }
