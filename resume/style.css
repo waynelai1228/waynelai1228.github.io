@@ -91,6 +91,10 @@ keyPoints {
 	font-size: 18px;
 }
 
+ul {
+	margin: 0px;
+}
+
 #contacts li, #skills li, #languages li {
     margin-left: 15px;
     margin-right: 4px;

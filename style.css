@@ -23,33 +23,31 @@ body {
 
 a {
 	text-decoration: none;
-	color: white;
+	color: inherit;
 }
 a:visited {
 	text-decoration: none;
 }
 a:hover{
-	text-shadow: 2px 2px 4px white;
+	text-shadow: 2px 2px 4px #93a1a1;
 }
 
 #content_wrapper {
 	position: fixed;
 	
-	height: 90%;
+	height: 100%;
 	width: 90%;
 	
-	top: 5%;
 	left: 5%;
-	
-	border-radius: 10px;
-	
+
+    color: #93a1a1;
 	font-family: Mylodon-Light;
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color: rgba(0, 43, 54, 0.85);
 }
 
-h1 {
+h1#name {
 	margin-bottom: 5px;
-	border-bottom: 2px solid #ffffff;
+	border-bottom: 2px solid #93a1a1;
 	margin-left: 20px;
 	
 	font-size: 40px;
@@ -68,21 +66,22 @@ nav {
 	overflow: hidden;
 	float: left;
 	
-	border-right: 2px solid #ffffff;
+	border-right: 2px solid #93a1a1;
 	margin-left: 20px;
 }
 
 #text_area {
 	margin-left: 300px;
 	margin-right: 20px;
-	overflow: hidden;
+	
+	word-wrap: break-word;
 	
 	font-size: 20px;
 	font-family: courier;
 }
 
 pre {
-	margin-top: 10px;
+	margin: 0px;
 }
 
 #background_credit {
@@ -94,3 +93,32 @@ pre {
 .link_sep {
 	height: 20px;
 }
+
+/*
+ *color class
+ */
+ .yellow {
+	 color: #b58900;
+ }
+ .orange {
+	 color: #cb4b16;
+ }
+ .red {
+	 color: #dc322f;
+ }
+ .magenta {
+	 color: #d33682;
+ }
+ .violet {
+	 color: #6c71c4;
+ }
+ .blue {
+	 color: #268bd2;
+ }
+ .cyan {
+	 color: #2aa198;
+ }
+ .green {
+	 color: #859900;
+ }
+ 
