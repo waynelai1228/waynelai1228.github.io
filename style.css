@@ -63,12 +63,16 @@ nav {
 	
 	margin-top: 20px;
 	
-	display: block;
 	overflow: hidden;
 	float: left;
 	
 	/*border-right: 2px solid #93a1a1;*/
 	margin-left: 20px;
+}
+
+.nav_links {
+	display: block;
+	margin-bottom: 20px;
 }
 
 #text_area {
