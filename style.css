@@ -96,6 +96,19 @@ pre {
 	right: 0;
 }
 
+code {
+	margin: 10px;
+	padding-left: 20px;
+	display: block;
+	background-color: #586e75;
+	border-radius: 5px;
+	color: #eee8d5;
+}
+
+#article_link a {
+	font-size: 30px;
+}
+
 /*
  *color class
  */
