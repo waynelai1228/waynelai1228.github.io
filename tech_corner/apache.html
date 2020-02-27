@@ -18,16 +18,56 @@
 				This page referenced the guide from <a href="https://shorturl.at/oyBL5" target="_blank" class="yellow">DigitalOcean</a> and <a href="https://shorturl.at/JKLMZ" target="_blank" class="yellow">Ubuntu</a>.</br>
 				</br>
 				Install Apache by running:</br>
-				<code>
+				<code class="block_code">
 				    sudo apt update</br>
 					sudo apt install apache2
 				</code>
 				</br>
 				Install <a href="ufw.html" class="violet">ufw</a></br>
-				View ufw application profiles:
-				<code>
-					sudo ufw app list
+				View <code>ufw</code> application profiles:
+				<code class="block_code">
+					<pre>
+sudo ufw app list</pre>
 				</code>
+				The output looks like this: 
+				<code class="block_code">
+					<pre>
+<b>#output</b>
+Available Applications:
+	Apache
+	Apache Full
+	Apache Secure</pre>
+				</code>
+				The application profiles are located at <code>/etc/ufw/applications.d</code>.</br>
+				The profiles contain the display name of the profile, the title of the app, a description, and the port that the app uses.</br>
+				Here is the list of port(s) associated with the Apache profiles:
+				<code class="block_code">
+					<pre>
+<b>#list</b>
+Apache          80/tcp
+Apache Full     80, 443/tcp
+Apache Secure   443/tcp</pre>
+				</code>
+				We open the http and https ports using the command:
+				<code class="block_code">
+					<pre>
+sudo ufw allow 'Apache Full'</pre>
+				</code>
+				Enable <code>ufw</code> and check the running status:
+				<code class="block_code">
+					<pre>
+sudo ufw enable
+sudo ufw status
+
+<b>#output</b>
+Status: active
+ 
+To			Action		From
+--			------		----
+Apache Full		ALLOW		Anywhere
+Apache Full		ALLOW		Anywhere (v6)</pre>
+				</code>
+				</br>				
 			</div>
 		
 		</div>
