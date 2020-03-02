@@ -57,8 +57,10 @@ sudo ufw allow 'Apache Full'</pre>
 				<code class="block_code">
 					<pre>
 sudo ufw enable
-sudo ufw status
-
+sudo ufw status</pre>
+                </code>
+				<code class="block_code">
+					<pre>
 <b>#output</b>
 Status: active
  
@@ -67,9 +69,17 @@ To			Action		From
 Apache Full		ALLOW		Anywhere
 Apache Full		ALLOW		Anywhere (v6)</pre>
 				</code>
-				</br>				
+				</br>
+				By default, <code>Apache</code> would start running right after you install it. 
+				<code class="block_code">
+					<pre>
+sudo systemctl status apache2</pre>
+                </code>
+				Output should indicate the system is <code>active (running)</code>.</br> 
+				
+				
+				</br>
 			</div>
-		
 		</div>
 		
 		<div id="background_credit">
