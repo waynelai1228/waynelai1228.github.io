@@ -1,0 +1,142 @@
+html{
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	height: 100%;
+	width:100%;
+	
+	margin: 0px;
+	
+	background-image: url("./image/Binary_Computer_Code.jfif");
+	background-size: cover;
+	background-repeat: repeat-y;
+	
+	font-family: Mylodon-Light;
+	color: white;
+	overflow: auto;
+}
+
+@font-face {
+	font-family: Mylodon-Light;
+	src: url("./font/Mylodon-Light.otf");
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover{
+	text-shadow: 2px 2px 4px #93a1a1;
+}
+
+#content_wrapper {	
+    margin: auto;
+	
+	min-height: 100%;
+	width: 90%;
+
+    color: #93a1a1;
+	font-family: Mylodon-Light;
+	background-color: rgba(0, 43, 54, 0.95);
+}
+
+h1#name {
+	margin-top: 0px;
+	margin-bottom: 5px;
+	margin-left: 20px;
+	padding-top: 20px;
+	border-bottom: 2px solid #93a1a1;
+	
+	font-size: 40px;
+}
+
+nav {
+	font-family: Mylodon-Light;
+	font-size: 30px;
+	
+	width: 250px;
+	
+	margin-top: 20px;
+	
+	overflow: hidden;
+	float: left;
+	
+	/*border-right: 2px solid #93a1a1;*/
+	margin-left: 20px;
+}
+
+.nav_links {
+	display: block;
+	margin-bottom: 20px;
+}
+
+#text_area {
+	margin-left: 300px;
+	margin-right: 20px;
+	
+	word-wrap: break-word;
+	
+	font-size: 20px;
+	font-family: 'IBM Plex Mono';
+}
+
+pre {
+	margin: 0px;
+	font-size: 20px;
+}
+
+#background_credit {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+
+code {
+	padding-left: 5px;
+	padding-right: 5px;
+	background-color: #586e75;
+	border-radius: 5px;
+	color: #eee8d5;
+}
+.block_code {
+	display: block;
+	margin: 10px;
+	padding-left: 20px;
+}
+
+#article_link a {
+	font-size: 30px;
+}
+
+/*
+ *color class
+ */
+ .yellow {
+	 color: #b58900;
+ }
+ .orange {
+	 color: #cb4b16;
+ }
+ .red {
+	 color: #dc322f;
+ }
+ .magenta {
+	 color: #d33682;
+ }
+ .violet {
+	 color: #6c71c4;
+ }
+ .blue {
+	 color: #268bd2;
+ }
+ .cyan {
+	 color: #2aa198;
+ }
+ .green {
+	 color: #859900;
+ }
