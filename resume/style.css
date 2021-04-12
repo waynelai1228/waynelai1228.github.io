@@ -15,7 +15,7 @@ a:hover {
 }
 
 main{
-	margin: auto;
+  margin: auto;
   width: 872px;
   /*height: 1200px;*/
 	height:1300px;
@@ -25,15 +25,15 @@ main{
   display:grid;
   grid-gap: 20px;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 70px 25px 25px 460px 330px 80px 180px;
+  grid-template-rows: 60px 25px 25px repeat(4, fit-content(400px));
   grid-template-areas:
     "name name"
     "contact contact"
     "skill skill"
-    "exp workexp"
-    "cmnt workexp"
-    "project workexp"
-    "project education";
+    "workexp workexp"
+    "exp exp"
+    "project cmnt"
+    "education education";
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -45,7 +45,7 @@ h1,h2,h3,h4,h5,h6{
   font-weight: bolder;
 }
 .vlabel{
-  font-size: 30px;
+  font-size: 20px;
   font-weight: bolder;
   padding: 10px 10px 10px 10px;
   color: white;
@@ -56,10 +56,12 @@ h1,h2,h3,h4,h5,h6{
   grid-area: name;
 }
 #name{
-  font-size: 40px;
+  font-size: 30px;
 }
 #subtext{
-  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
 }
 
 #contacts{
@@ -91,42 +93,75 @@ h1,h2,h3,h4,h5,h6{
 #work{
   grid-area: workexp;
   display: grid;
-  grid-template-rows: 55px auto auto auto;
+  grid-template-rows: 40px auto auto auto;
+}
+#sa,#cti1,#cti2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: fit-content(80px) fit-content(80px) fit-content(300px);
+  grid-template-areas:
+    "jobTitle timePeriod"
+    "employer location"
+    "description description";
+}
+#sa h3,#cti1 h3,#cti2 h3{
+  grid-area: jobTitle;
+}
+.employer{
+  grid-area: employer;
 }
 .timePeriod{
+  grid-area: timePeriod;
   display: grid;
   grid-gap: 1px;
-  grid-template-columns: 20px auto;
+  grid-template-columns: 30px auto;
+  justify-content: right;
   align-items: center;
   font-size: 14px;
+}
+.location{
+  grid-area: location;
+  display: grid;
+  justify-content: right;
+}
+.description{
+  grid-area: description;
 }
 
 #experience{
   grid-area: exp;
   display: grid;
-  grid-template-rows: 55px auto auto;
+  grid-template-rows: 40px auto auto;
+}
+#rr{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: fit-content(80px) fit-content(300px);
+  grid-template-areas:
+    "expName timePeriod"
+    "description description";
 }
 
 #community{
   grid-area: cmnt;
   display: grid;
-  grid-template-rows: 55px auto auto;
+  grid-template-rows: 40px auto auto;
 }
 
 #project{
   grid-area: project;
   display: grid;
-  grid-template-rows: 55px auto;
+  grid-template-rows: 40px auto;
 }
 
 #education{
   grid-area: education;
   display: grid;
-  grid-template-rows: 55px auto auto;
+  grid-template-rows: 40px auto auto;
 }
 
 .description{
   margin-top: 10px;
   margin-bottom: 10px;
-  font-size: 22px;
+  font-size: 20px;
 }
