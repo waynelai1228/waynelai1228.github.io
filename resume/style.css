@@ -1,8 +1,8 @@
 body {
-    margin: 0px;
-    border: 0px;
-    font-family: "Arial";
-	background-color: #002b36;
+  margin: 0px;
+  border: 0px;
+  font-family: "Arial";
+  background-color: #002b36;
 }
 
 a {
@@ -14,92 +14,119 @@ a:hover {
 	color: blue;
 }
 
-#contentArea {
+main{
 	margin: auto;
-    width: 872px;
-    /*height: 1200px;*/
+  width: 872px;
+  /*height: 1200px;*/
 	height:1300px;
-    background-color: white;
-    padding: 30px 50px 30px 40px;
+  background-color: white;
+  padding: 30px 50px 30px 40px;
+
+  display:grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 70px 25px 25px 460px 330px 80px 180px;
+  grid-template-areas:
+    "name name"
+    "contact contact"
+    "skill skill"
+    "exp workexp"
+    "cmnt workexp"
+    "project workexp"
+    "project education";
 }
 
-#others {
-	margin-top: 10px;
+h1,h2,h3,h4,h5,h6{
+  margin: 2px;
 }
 
-name {
-    display: block;
-    width: 872px;
-
-    font-weight: bold;
-    font-size: 30px;
+.hlabel{
+  font-size: 20px;
+  font-weight: bolder;
+}
+.vlabel{
+  font-size: 30px;
+  font-weight: bolder;
+  padding: 10px 10px 10px 10px;
+  color: white;
+  background-color: black;
 }
 
-subtext {
-    margin-bottom: 20px;
-    display: block;
-    width: 872px;
-
-    font-size: 18px;
+#nameIntro{
+  grid-area: name;
+}
+#name{
+  font-size: 40px;
+}
+#subtext{
+  font-size: 20px;
 }
 
-.fullWidthSection {
-    display: block;
-    width: 872px;
-    height: 70px;
+#contacts{
+  grid-area: contact;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  align-items: center;
+  font-size: 16px;
 }
-.halfWidthSection {
-	margin-left:5px;
-    display: block;
-    width: 431px;
-    float: left;
-}
-
-sectionTitle {
-    margin-top: 10px;
-    display: block;
-
-    font-weight: bold;
-    font-size: 20px;
+.contact{
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: 20px auto;
+  align-items: center;
 }
 
-.companyName {
-    font-size: 18px;
+
+#skills{
+  grid-area: skill;
+  display: grid;
+  grid-template-rows: 25px;
+  grid-template-columns: 70px repeat(13, fit-content(80px));
+  align-items: baseline;
+  font-size: 16px;
 }
-.roleName {
-    font-weight: bold;
-    font-size: 18px;
-}
-.timeSpan {
-    font-size: 14px;
+.skill{
 }
 
-keyPoints {
-    padding-right: 10px;
-    font-size: 16px;
+#work{
+  grid-area: workexp;
+  display: grid;
+  grid-template-rows: 55px auto auto auto;
+}
+.timePeriod{
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: 20px auto;
+  align-items: center;
+  font-size: 14px;
 }
 
-.institutionName {
-    margin-bottom: 5px;
-    font-weight: bold;
-    font-size: 18px;
+#experience{
+  grid-area: exp;
+  display: grid;
+  grid-template-rows: 55px auto auto;
 }
 
-.educationHistory {
-    margin-bottom: 18px;
+#community{
+  grid-area: cmnt;
+  display: grid;
+  grid-template-rows: 55px auto auto;
 }
 
-.projectName {
-	font-weight: bold;
-	font-size: 18px;
+#project{
+  grid-area: project;
+  display: grid;
+  grid-template-rows: 55px auto;
 }
 
-ul {
-	margin: 0px;
+#education{
+  grid-area: education;
+  display: grid;
+  grid-template-rows: 55px auto auto;
 }
 
-#contacts li, #skills li, #languages li {
-    margin-left: 15px;
-    margin-right: 4px;
-    float:left;
+.description{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 22px;
 }
